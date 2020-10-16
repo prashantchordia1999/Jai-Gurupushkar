@@ -121,45 +121,94 @@
 
 
     
-    <div class="site-section" id="contact-section">
-      <div class="container">
-        <form action="" class="contact-form">
+     <div class="site-section" id="contact-section">
+            <div class="container">
+                <form action="javascript: postToGoogle()" class="contact-form">
 
-          <div class="section-title text-center mb-5">
-            <span class="sub-title mb-2 d-block">Registration Form</span>
-            <h2 class="title text-primary">रजिस्ट्रेशन फॉर्म</h2>
-          </div>
+                    <div class="section-title text-center mb-5">
+                        <span class="sub-title mb-2 d-block">Registration Form</span>
+                        <h2 class="title text-primary">रजिस्ट्रेशन फॉर्म</h2>
+                    </div>
 
-          <div class="row mb-4">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <input type="text" class="form-control" placeholder="First name">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="text" name="name" class="form-control" placeholder="Name (Enter your Full Name)" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="text" name="phone" class="form-control" placeholder="Mobile Number (Enter your Mobile Number)" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                    </div> -->
+
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <input type="text" name="age" class="form-control" placeholder="Age (Enter your Age (in Years))" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="city" class="form-control" placeholder="City/Village (Enter your City/Village)" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="text" name="city" class="form-control" placeholder="City" required>
+                        </div>
+                    </div> -->
+
+                    <div class="row mb-4">
+                        <div class="col-12" name="entry.607701797">
+                            <h6>Gender (Select Gender)</h6>
+                            <label for="male"><input type="radio" name="entry.607701797" id="male" value="male" required> Male</label> &nbsp;&nbsp;
+                            <label for="female"><input type="radio" name="entry.607701797" id="female" value="female" required> Female</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12" name="entry.1472477148">
+                            <h6>Select one of these. (इनमें से कोई एक चुनें।)</h6>
+                            <label for="individual"><input type="radio" name="entry.1472477148" id="family" value="individual" required> Individual (स्वयं)</label> &nbsp;&nbsp;
+                            <label for="family"><input type="radio" name="entry.1472477148" id="family" value="family" required> Family (परिवार)</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12" name="entry.1736559275">
+                            <h6>तप (Samayik, Ekasana, Ayambil)</h6>
+                            <label for="samayik"><input type="radio" name="entry.1736559275" id="samayik" value="samayik" required> Samayik</label> &nbsp;&nbsp;
+                            <label for="ayambil"><input type="radio" name="entry.1736559275" id="ayambil" value="ayambil" required> Ayambil</label> &nbsp;&nbsp;
+                            <label for="Ekasana"><input type="radio" name="entry.1736559275" id="Ekasana" value="Ekasana" required> Ekasana</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="number" name="noofsamayik" class="form-control" placeholder="Number of Samayik (Minimum 5)" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <input type="number" name="noofek" class="form-control" placeholder="Number of Ekasana/Ayambil" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
             </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <input type="text" class="form-control" placeholder="Email">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-md">Submit</button>
-            </div>
-          </div>
-
-        </form>
-      </div>
-    </div> <!-- END .site-section -->
+        </div><!-- END .site-section -->
   
     <footer class="site-footer">
       <div class="container">
@@ -196,6 +245,7 @@
   
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 
      
   </body>
