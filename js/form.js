@@ -8,7 +8,7 @@
      var tap = $("[name='entry.1736559275']:checked").val();
      var noofsamayik = $("[name='noofsamayik']").val();
      var noofek = $("[name='noofek']").val();
-     window.alert(gender + " " + regtype + " " + tap)
+     window.alert( name +" entered details are : Mobile No.-"+ phone + ", Age- " + age + ", City- " + city + ", Gender- " + gender + ", Individual/Family- " + regtype + ", तप- " + tap + ", No. of Samayik- " + noofsamayik + ", No of Akasana/Aayambil- " + noofek);
      $.ajax({
          url: "https://docs.google.com/forms/d/e/1FAIpQLSexWHJ94SmebG9nu_ljGndq1Xlhq2t2hTZ0kz9SAP-dMTDOrw/formResponse",
          data: {
@@ -25,8 +25,8 @@
          type: "POST",
          dataType: "xml",
          statusCode: {
-             0: function() { alert("THANK YOU! YOUR RESPONSE IS RECORDED SUCESSFULLY."); },
-             200: function() { alert("THANK YOU! YOUR RESPONSE IS RECORDED SUCESSFULLY."); }
+             0: function() { alert("THANK YOU! Your response is submitted (आपकी जानकारी जमा कर ली गयी है|)"); },
+             200: function() { alert("THANK YOU! Your response is submitted (आपकी जानकारी जमा कर ली गयी है|)"); }
          }
      });
  }

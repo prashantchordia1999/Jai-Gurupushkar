@@ -132,13 +132,13 @@
 
                     <div class="row mb-4">
                         <div class="col-12">
-                            <input type="text" name="name" class="form-control" placeholder="Name (Enter your Full Name)" required>
+                            <input type="text" name="name" class="form-control" placeholder="Name (Enter your Full Name)" pattern="[a-Z]" title="Use Alphabets Only" required>
                         </div>
                     </div>
 
                     <div class="row mb-4">
                         <div class="col-12">
-                            <input type="text" name="phone" class="form-control" placeholder="Mobile Number (Enter your Mobile Number)" required>
+                            <input type="text" name="phone" class="form-control" placeholder="Mobile Number (Enter your Mobile Number)" pattern="[0-9]{10}" title="Enter 10 Digit Mobile Number Only" required>
                         </div>
                     </div>
 
@@ -166,16 +166,16 @@
                     <div class="row mb-4">
                         <div class="col-12" name="entry.607701797">
                             <h6>Gender (Select Gender)</h6>
-                            <label for="male"><input type="radio" name="entry.607701797" id="male" value="male" required> Male</label> &nbsp;&nbsp;
-                            <label for="female"><input type="radio" name="entry.607701797" id="female" value="female" required> Female</label>
+                            <label for="male"><input type="radio" name="entry.607701797" id="male" value="Male" required> Male</label> &nbsp;&nbsp;
+                            <label for="female"><input type="radio" name="entry.607701797" id="female" value="Female" required> Female</label>
                         </div>
                     </div>
 
                     <div class="row mb-4">
                         <div class="col-12" name="entry.1472477148">
                             <h6>Select one of these. (इनमें से कोई एक चुनें।)</h6>
-                            <label for="individual"><input type="radio" name="entry.1472477148" id="family" value="individual" required> Individual (स्वयं)</label> &nbsp;&nbsp;
-                            <label for="family"><input type="radio" name="entry.1472477148" id="family" value="family" required> Family (परिवार)</label>
+                            <label for="individual"><input type="radio" name="entry.1472477148" id="family" value="Individual" required> Individual (स्वयं)</label> &nbsp;&nbsp;
+                            <label for="family"><input type="radio" name="entry.1472477148" id="family" value="Family" required> Family (परिवार)</label>
                         </div>
                     </div>
 
@@ -190,13 +190,13 @@
 
                     <div class="row mb-4">
                         <div class="col-12">
-                            <input type="number" name="noofsamayik" class="form-control" placeholder="Number of Samayik (Minimum 5)" required>
+                            <input type="number" name="noofsamayik" class="form-control" placeholder="Number of Samayik (Minimum 5)" pattern="[0-9]" title="Enter Number Only">
                         </div>
                     </div>
 
                     <div class="row mb-4">
                         <div class="col-12">
-                            <input type="number" name="noofek" class="form-control" placeholder="Number of Ekasana/Ayambil" required>
+                            <input type="number" name="noofek" class="form-control" placeholder="Number of Ekasana/Ayambil" pattern="[0-9]" title="Enter Number Only">
                         </div>
                     </div>
 
